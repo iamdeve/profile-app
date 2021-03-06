@@ -7,6 +7,14 @@ import horizontal from '../Images/horizontal.jpg';
 import $ from 'jquery';
 import h2 from '../Images/h2.jpg';
 import vertical from '../Images/vertical.jpg';
+import IMG1 from '../Images/1.jpg';
+import IMG2 from '../Images/2.jpg';
+import IMG3 from '../Images/3.jpg';
+import IMG4 from '../Images/4.jpg';
+import IMG5 from '../Images/5.jpg';
+import IMG6 from '../Images/6.jpg';
+import IMG7 from '../Images/7.jpg';
+import IMG8 from '../Images/8.jpg';
 import HorizontalModal from '../components/HorizontalModal';
 import VerticalModel from '../components/VerticalModel';
 
@@ -35,7 +43,7 @@ let data = [
 					title: 'Lorpas Ipsum1 Dollar1',
 					images: [
 						{ file: horizontal, horizontal: true },
-						{ file: h2, horizontal: true },
+						{ file: IMG2, horizontal: false },
 						{ file: horizontal, horizontal: true },
 					],
 				},
@@ -43,30 +51,30 @@ let data = [
 					title: 'Lorpas Ipsum1 Dollar2',
 					images: [
 						{ file: horizontal, horizontal: true },
-						{ file: h2, horizontal: true },
+						{ file: IMG1, horizontal: false },
 						{ file: horizontal, horizontal: true },
-						{ file: h2, horizontal: true },
+						{ file: IMG3, horizontal: false },
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar3',
 					images: [
 						{ file: horizontal, horizontal: true },
-						{ file: h2, horizontal: true },
+						{ file: IMG4, horizontal: false },
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar4',
 					images: [
 						{ file: vertical, horizontal: false },
-						{ file: h2, horizontal: true },
+						{ file: IMG6, horizontal: true },
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar5',
 					images: [
-						{ file: vertical, horizontal: false },
-						{ file: h2, horizontal: true },
+						{ file: IMG2, horizontal: false },
+						{ file: IMG7, horizontal: true },
 					],
 				},
 				{
@@ -74,9 +82,9 @@ let data = [
 					images: [
 						{ file: h2, horizontal: true },
 						{ file: vertical, horizontal: false },
+						{ file: IMG4, horizontal: false },
 						{ file: h2, horizontal: true },
-						{ file: h2, horizontal: true },
-						{ file: h2, horizontal: true },
+						{ file: IMG5, horizontal: false },
 						{ file: h2, horizontal: true },
 					],
 				},
@@ -87,19 +95,19 @@ let data = [
 				{
 					title: 'Lorpas Ipsum1 Dollar8',
 					images: [
-						{ file: vertical, horizontal: false },
+						{ file: IMG8, horizontal: false },
 						{ file: h2, horizontal: true },
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar9',
-					images: [{ file: h2, horizontal: true }],
+					images: [{ file: IMG8, horizontal: false }],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar10',
 					images: [
 						{ file: h2, horizontal: true },
-						{ file: h2, horizontal: true },
+						{ file: IMG1, horizontal: true },
 					],
 				},
 				{
@@ -113,18 +121,18 @@ let data = [
 					title: 'Lorpas Ipsum1 Dollar12',
 					images: [
 						{ file: h2, horizontal: true },
-						{ file: h2, horizontal: true },
+						{ file: IMG2, horizontal: false },
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar 13 must have to change',
 					images: [
+						{ file: IMG1, horizontal: false },
+						{ file: IMG2, horizontal: false },
 						{ file: vertical, horizontal: false },
-						{ file: vertical, horizontal: false },
-						{ file: vertical, horizontal: false },
-						{ file: vertical, horizontal: false },
+						{ file: IMG8, horizontal: false },
 						{ file: h2, horizontal: true },
-						{ file: h2, horizontal: true },
+						{ file: IMG8, horizontal: true },
 						{ file: h2, horizontal: true },
 					],
 				},
@@ -135,9 +143,9 @@ let data = [
 				{
 					title: 'Lorpas Ipsum1 Dollar 15 must have to change',
 					images: [
+						{ file: IMG2, horizontal: false },
 						{ file: vertical, horizontal: false },
-						{ file: vertical, horizontal: false },
-						{ file: vertical, horizontal: false },
+						{ file: IMG6, horizontal: false },
 						{ file: vertical, horizontal: false },
 					],
 				},
@@ -147,7 +155,7 @@ let data = [
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar 17 must have to change',
-					images: [{ file: h2, horizontal: true }],
+					images: [{ file: IMG2, horizontal: true }],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar 18 must have to change',
@@ -156,7 +164,7 @@ let data = [
 				{
 					title: 'Lorpas Ipsum1 Dollar 199 must have to change',
 					images: [
-						{ file: vertical, horizontal: false },
+						{ file: IMG1, horizontal: false },
 						{ file: vertical, horizontal: false },
 						{ file: h2, horizontal: true },
 					],
@@ -165,9 +173,9 @@ let data = [
 					title: 'Lorpas Ipsum1 Dollar 20 must have to change',
 					images: [
 						{ file: vertical, horizontal: false },
+						{ file: IMG4, horizontal: true },
 						{ file: h2, horizontal: true },
-						{ file: h2, horizontal: true },
-						{ file: h2, horizontal: true },
+						{ file: IMG3, horizontal: true },
 						{ file: h2, horizontal: true },
 					],
 				},

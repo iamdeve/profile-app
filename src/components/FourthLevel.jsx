@@ -9,7 +9,14 @@ import vertical from '../Images/vertical.jpg';
 import v2 from '../Images/v2.jpg';
 import HorizontalModal2 from '../components/HorizontalModal2';
 import VerticalModel2 from '../components/VerticalModel2';
-
+import IMG1 from '../Images/1.jpg';
+import IMG2 from '../Images/2.jpg';
+import IMG3 from '../Images/3.jpg';
+import IMG4 from '../Images/4.jpg';
+import IMG5 from '../Images/5.jpg';
+import IMG6 from '../Images/6.jpg';
+import IMG7 from '../Images/7.jpg';
+import IMG8 from '../Images/8.jpg';
 import '../css/common.css';
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -68,9 +75,9 @@ export default function FourthLevel() {
 							<div className=' col-sm-10 '>
 								<div className='d-flex '>
 									{[
-										{ file: vertical, horizontal: false },
-										{ file: vertical, horizontal: false },
-										{ file: vertical, horizontal: false },
+										{ file: IMG1, horizontal: false },
+										{ file: IMG2, horizontal: false },
+										{ file: IMG3, horizontal: false },
 									].map((image, id) => (
 										<img
 											className='h-image-size'
@@ -129,7 +136,7 @@ export default function FourthLevel() {
 							<div className=' col-sm-10 '>
 								<div className='d-flex '>
 									{[
-										{ file: vertical, horizontal: false },
+										{ file: IMG4, horizontal: false },
 										{ file: v2, horizontal: false },
 									].map((image, id) => (
 										<img
