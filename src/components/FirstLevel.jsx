@@ -4,7 +4,7 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import horizontal from '../Images/horizontal.jpg';
-
+import $ from 'jquery';
 import h2 from '../Images/h2.jpg';
 import vertical from '../Images/vertical.jpg';
 import HorizontalModal from '../components/HorizontalModal';
@@ -238,11 +238,18 @@ export default function FirstLevel() {
 		setCurrentImage(image);
 		if (horizontal) {
 			setModalShowHor(true);
+			setModalShowVer(false);
 		} else {
 			setModalShowVer(true);
+			setModalShowHor(false);
 		}
 	};
-
+	React.useEffect(() => {
+		document.body.addEventListener('click', () => {
+			setModalShowHor(false);
+			setModalShowVer(false);
+		});
+	}, []);
 	return (
 		<div className='container '>
 			<HorizontalModal show={modalShowHor} image={currentImage} onHide={() => setModalShowHor(false)} />

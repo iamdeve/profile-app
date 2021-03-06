@@ -16,6 +16,22 @@ h5 {
 }
 .modal-content{
     height: 89vh;
+    cursor:none
+}
+.modal-bg{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+}
+.modal-backdrop,.modal-backdrop.fade,  .modal, .modal-content , .modal > div{
+    pointer-events: none;
+}
+.moveAble{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: red;
 }
 .h-image-size{
     width: 8rem;
