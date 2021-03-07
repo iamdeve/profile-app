@@ -3,6 +3,7 @@ import horizontal from '../Images/horizontal.jpg';
 import vertical from '../Images/vertical.jpg';
 import Modal from 'react-bootstrap/Modal';
 import '../css/common.css';
+import { Link } from 'react-router-dom';
 function VerticalModel(props) {
 	console.log('prpos');
 	return (
@@ -13,7 +14,9 @@ function VerticalModel(props) {
 			</Modal.Body>
 			<Modal.Footer>
 				<div className='mb-2 fontfamily'>
-					<strong>Lorpas Ipsum</strong> Currently, I am working as Assistant Professor
+					<Link style={{ textDecoration: 'underline' }} to='/'>
+						<strong>Lorpas Ipsum</strong> Currently, I am working as Assistant Professor
+					</Link>
 				</div>
 			</Modal.Footer>
 		</Modal>

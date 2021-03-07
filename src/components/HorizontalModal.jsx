@@ -4,8 +4,8 @@ import horizontal from '../Images/horizontal.jpg';
 import vertical from '../Images/vertical.jpg';
 import '../css/common.css';
 import $ from 'jquery';
+import { Link } from 'react-router-dom';
 function HorizontalModal(props) {
-
 	return (
 		<>
 			<Modal {...props} size='lg' aria-labelledby='contained-modal-title-vcenter' centered>
@@ -15,7 +15,9 @@ function HorizontalModal(props) {
 				</Modal.Body>
 				<Modal.Footer>
 					<div className='mb-2 fontfamily'>
-						<strong>Lorpas Ipsum</strong> Currently, I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.
+						<Link style={{ textDecoration: 'underline' }} to='/somewher'>
+							<strong>Lorpas Ipsum</strong> Currently, I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.
+						</Link>
 					</div>
 				</Modal.Footer>
 			</Modal>
