@@ -17,6 +17,7 @@ import IMG5 from '../Images/5.jpg';
 import IMG6 from '../Images/6.jpg';
 import IMG7 from '../Images/7.jpg';
 import IMG8 from '../Images/8.jpg';
+import $ from 'jquery';
 import '../css/common.css';
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -28,7 +29,14 @@ const useStyles = makeStyles((theme) => ({
 		flexShrink: 0,
 	},
 }));
+function newTabImage(id, symbol) {
+	var image = new Image();
+	image.src = $('#idimage' + id + symbol).attr('src');
 
+	var w = window.open('', '_blank');
+	w.document.write(image.outerHTML);
+	w.document.close();
+}
 export default function FourthLevel() {
 	const classes = useStyles();
 	const [modalShowHor, setModalShowHor] = React.useState(false);
@@ -83,6 +91,8 @@ export default function FourthLevel() {
 											className='h-image-size'
 											src={image.file}
 											alt='horizontalimage'
+											id={'idimage' + id + '-idj'}
+											onClick={() => newTabImage(id, '-idj')}
 											onMouseOver={() => {
 												if (image.horizontal) {
 													showModalHandler(image.file, true);
@@ -114,6 +124,8 @@ export default function FourthLevel() {
 											className='h-image-size'
 											src={image.file}
 											alt='horizontalimage'
+											id={'idimage' + id + '-iddj'}
+											onClick={() => newTabImage(id, '-iddj')}
 											onMouseOver={() => {
 												if (image.horizontal) {
 													showModalHandler(image.file, true);
@@ -143,6 +155,8 @@ export default function FourthLevel() {
 											className='h-image-size'
 											src={image.file}
 											alt='horizontalimage'
+											id={'idimage' + id + '-idddj'}
+											onClick={() => newTabImage(id, '-idddj')}
 											onMouseOver={() => {
 												if (image.horizontal) {
 													showModalHandler(image.file, true);

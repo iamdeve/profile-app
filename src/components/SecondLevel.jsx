@@ -15,6 +15,7 @@ import IMG5 from '../Images/5.jpg';
 import IMG6 from '../Images/6.jpg';
 import IMG7 from '../Images/7.jpg';
 import IMG8 from '../Images/8.jpg';
+import $ from 'jquery';
 import '../css/common.css';
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -26,7 +27,14 @@ const useStyles = makeStyles((theme) => ({
 		flexShrink: 0,
 	},
 }));
+function newTabImage(id, symbol) {
+	var image = new Image();
+	image.src = $('#idimage' + id + symbol).attr('src');
 
+	var w = window.open('', '_blank');
+	w.document.write(image.outerHTML);
+	w.document.close();
+}
 export default function SecondLevel() {
 	const classes = useStyles();
 	const [modalShowHor, setModalShowHor] = React.useState(false);
@@ -81,6 +89,8 @@ export default function SecondLevel() {
 											className='h-image-size'
 											src={image.file}
 											alt='horizontalimage'
+											id={'idimage' + id + '-id'}
+											onClick={() => newTabImage(id, '-id')}
 											onMouseOver={() => {
 												if (image.horizontal) {
 													showModalHandler(image.file, true);
@@ -116,6 +126,8 @@ export default function SecondLevel() {
 										<img
 											className='h-image-size'
 											src={image.file}
+											id={'idimage' + id + '-idd'}
+											onClick={() => newTabImage(id, '-idd')}
 											alt='horizontalimage'
 											onMouseOver={() => {
 												if (image.horizontal) {
@@ -165,6 +177,8 @@ export default function SecondLevel() {
 										<img
 											className='h-image-size'
 											src={image.file}
+											id={'idimage' + id + '-iddd'}
+											onClick={() => newTabImage(id, '-iddd')}
 											alt='horizontalimage'
 											onMouseOver={() => {
 												if (image.horizontal) {
@@ -199,6 +213,8 @@ export default function SecondLevel() {
 											className='h-image-size'
 											src={image.file}
 											alt='horizontalimage'
+											id={'idimage' + id + '-idddd'}
+											onClick={() => newTabImage(id, '-idddd')}
 											onMouseOver={() => {
 												if (image.horizontal) {
 													showModalHandler(image.file, true);
@@ -226,6 +242,8 @@ export default function SecondLevel() {
 											className='h-image-size'
 											src={image.file}
 											alt='horizontalimage'
+											id={'idimage' + id + '-iddddd'}
+											onClick={() => newTabImage(id, '-iddddd')}
 											onMouseOver={() => {
 												if (image.horizontal) {
 													showModalHandler(image.file, true);

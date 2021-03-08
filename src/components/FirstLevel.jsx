@@ -236,7 +236,14 @@ let data = [
 		},
 	},
 ];
+function newTabImage(id) {
+	var image = new Image();
+	image.src = $('#idimage' + id).attr('src');
 
+	var w = window.open('', '_blank');
+	w.document.write(image.outerHTML);
+	w.document.close();
+}
 export default function FirstLevel() {
 	const classes = useStyles();
 	const [modalShowHor, setModalShowHor] = React.useState(false);
@@ -253,6 +260,11 @@ export default function FirstLevel() {
 		}
 	};
 	React.useEffect(() => {
+		// $(document).ready(() => {
+		// 	document.body.addEventListener('mouseover', (e) => {
+		// 		console.log(e.target);
+		// 	});
+		// });
 		document.body.addEventListener('click', () => {
 			setModalShowHor(false);
 			setModalShowVer(false);
@@ -286,11 +298,13 @@ export default function FirstLevel() {
 										<div className='d-flex' style={{ flexWrap: 'wrap' }}>
 											{img.images.map((image, j) => (
 												<div key={j}>
+													{/* <a href='/' target='_blank'> */}
 													<img
 														className='h-image-size'
 														src={image.file}
+														id={'idimage' + i + '-' + j}
+														onClick={() => newTabImage(+i + '-' + j)}
 														alt='horizontalimage'
-														alt='h2'
 														onMouseOver={() => {
 															if (image.horizontal) {
 																showModalHandler(image.file, true);
@@ -299,6 +313,7 @@ export default function FirstLevel() {
 															}
 														}}
 													/>
+													{/* </a> */}
 												</div>
 											))}
 										</div>
