@@ -11,8 +11,6 @@ function App() {
 			<Switch>
 				<Route exact path='/' component={UnExpended} />
 			</Switch>
-
-			{/* <AllExpanded /> */}
 		</div>
 	);
 }

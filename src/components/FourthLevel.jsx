@@ -83,33 +83,27 @@ export default function FourthLevel() {
 							<div className=' col-sm-10 '>
 								<div className='d-flex '>
 									{[
-										{ file: IMG1, horizontal: false },
-										{ file: IMG2, horizontal: false },
-										{ file: IMG3, horizontal: false },
+										{ file: IMG1, horizontal: false, link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg' },
+										{ file: IMG2, horizontal: false, link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg' },
+										{ file: IMG3, horizontal: false, link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg' },
 									].map((image, id) => (
-										<img
-											className='h-image-size'
-											src={image.file}
-											alt='horizontalimage'
-											id={'idimage' + id + '-idj'}
-											onClick={() => newTabImage(id, '-idj')}
-											onMouseOver={() => {
-												if (image.horizontal) {
-													showModalHandler(image.file, true);
-												} else {
-													showModalHandler(image.file, false);
-												}
-											}}
-										/>
-										// <img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
+										<a href={image.link} rel='noreferrer' target='_blank'>
+											<img
+												className='h-image-size'
+												src={image.file}
+												alt='horizontalimage'
+												id={'idimage' + id + '-idj'}
+												// onClick={() => newTabImage(id, '-idj')}
+												onMouseOver={() => {
+													if (image.horizontal) {
+														showModalHandler(image.file, true);
+													} else {
+														showModalHandler(image.file, false);
+													}
+												}}
+											/>
+										</a>
 									))}
-									{/* <img className='v-image-size' style={{ cursor: 'pointer' }} src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-
-									<img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} /> */}
 								</div>
 							</div>
 						</div>
@@ -119,25 +113,24 @@ export default function FourthLevel() {
 							</div>
 							<div className=' col-sm-10 '>
 								<div className='d-flex '>
-									{[{ file: vertical, horizontal: false }].map((image, id) => (
-										<img
-											className='h-image-size'
-											src={image.file}
-											alt='horizontalimage'
-											id={'idimage' + id + '-iddj'}
-											onClick={() => newTabImage(id, '-iddj')}
-											onMouseOver={() => {
-												if (image.horizontal) {
-													showModalHandler(image.file, true);
-												} else {
-													showModalHandler(image.file, false);
-												}
-											}}
-										/>
-										// <img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
+									{[{ file: vertical, horizontal: false, link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg' }].map((image, id) => (
+										<a href={image.link} rel='noreferrer' target='_blank'>
+											<img
+												className='h-image-size'
+												src={image.file}
+												alt='horizontalimage'
+												id={'idimage' + id + '-iddj'}
+												// onClick={() => newTabImage(id, '-iddj')}
+												onMouseOver={() => {
+													if (image.horizontal) {
+														showModalHandler(image.file, true);
+													} else {
+														showModalHandler(image.file, false);
+													}
+												}}
+											/>
+										</a>
 									))}
-									{/* <img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} /> */}
 								</div>
 							</div>
 						</div>
@@ -148,29 +141,26 @@ export default function FourthLevel() {
 							<div className=' col-sm-10 '>
 								<div className='d-flex '>
 									{[
-										{ file: IMG4, horizontal: false },
-										{ file: v2, horizontal: false },
+										{ file: IMG4, horizontal: false, link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg' },
+										{ file: v2, horizontal: false, link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg' },
 									].map((image, id) => (
-										<img
-											className='h-image-size'
-											src={image.file}
-											alt='horizontalimage'
-											id={'idimage' + id + '-idddj'}
-											onClick={() => newTabImage(id, '-idddj')}
-											onMouseOver={() => {
-												if (image.horizontal) {
-													showModalHandler(image.file, true);
-												} else {
-													showModalHandler(image.file, false);
-												}
-											}}
-										/>
-										// <img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
+										<a href={image.link} rel='noreferrer' target='_blank'>
+											<img
+												className='h-image-size'
+												src={image.file}
+												alt='horizontalimage'
+												id={'idimage' + id + '-idddj'}
+												// onClick={() => newTabImage(id, '-idddj')}
+												onMouseOver={() => {
+													if (image.horizontal) {
+														showModalHandler(image.file, true);
+													} else {
+														showModalHandler(image.file, false);
+													}
+												}}
+											/>
+										</a>
 									))}
-									{/* <img id='1' className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img id='2' className='v-image-size' src={v2} alt='v2' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={v2} onHide={() => setModalShowVer(false)} /> */}
 								</div>
 							</div>
 						</div>

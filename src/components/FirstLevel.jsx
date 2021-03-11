@@ -42,141 +42,462 @@ let data = [
 				{
 					title: 'Lorpas Ipsum1 Dollar1',
 					images: [
-						{ file: horizontal, horizontal: true },
-						{ file: IMG2, horizontal: false },
-						{ file: horizontal, horizontal: true },
+						{
+							file: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG2,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: horizontal,
+							horizontal: true,
+
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar2',
 					images: [
-						{ file: horizontal, horizontal: true },
-						{ file: IMG1, horizontal: false },
-						{ file: horizontal, horizontal: true },
-						{ file: IMG3, horizontal: false },
+						{
+							file: horizontal,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG1,
+							horizontal: false,
+
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: horizontal,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG3,
+							horizontal: false,
+
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar3',
 					images: [
-						{ file: horizontal, horizontal: true },
-						{ file: IMG4, horizontal: false },
+						{
+							file: horizontal,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG4,
+							horizontal: false,
+
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar4',
 					images: [
-						{ file: vertical, horizontal: false },
-						{ file: IMG6, horizontal: true },
+						{
+							file: vertical,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG6,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar5',
 					images: [
-						{ file: IMG2, horizontal: false },
-						{ file: IMG7, horizontal: true },
+						{
+							file: IMG2,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG7,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar6',
 					images: [
-						{ file: h2, horizontal: true },
-						{ file: vertical, horizontal: false },
-						{ file: IMG4, horizontal: false },
-						{ file: h2, horizontal: true },
-						{ file: IMG5, horizontal: false },
-						{ file: h2, horizontal: true },
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: vertical,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG4,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG5,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar7',
-					images: [{ file: h2, horizontal: true }],
+					images: [
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar8',
 					images: [
-						{ file: IMG8, horizontal: false },
-						{ file: h2, horizontal: true },
+						{
+							file: IMG8,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar9',
-					images: [{ file: IMG8, horizontal: false }],
+					images: [
+						{
+							file: IMG8,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar10',
 					images: [
-						{ file: h2, horizontal: true },
-						{ file: IMG1, horizontal: true },
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG1,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar11',
 					images: [
-						{ file: h2, horizontal: true },
-						{ file: vertical, horizontal: false },
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: vertical,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar12',
 					images: [
-						{ file: h2, horizontal: true },
-						{ file: IMG2, horizontal: false },
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG2,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar 13 must have to change',
 					images: [
-						{ file: IMG1, horizontal: false },
-						{ file: IMG2, horizontal: false },
-						{ file: vertical, horizontal: false },
-						{ file: IMG8, horizontal: false },
-						{ file: h2, horizontal: true },
-						{ file: IMG8, horizontal: true },
-						{ file: h2, horizontal: true },
+						{
+							file: IMG1,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG2,
+							horizontal: false,
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: vertical,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG8,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG8,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar 14 must have to change',
-					images: [{ file: h2, horizontal: true }],
+					images: [
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar 15 must have to change',
 					images: [
-						{ file: IMG2, horizontal: false },
-						{ file: vertical, horizontal: false },
-						{ file: IMG6, horizontal: false },
-						{ file: vertical, horizontal: false },
+						{
+							file: IMG2,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: vertical,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG6,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: vertical,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar 16 must have to change',
-					images: [{ file: h2, horizontal: true }],
+					images: [
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar 17 must have to change',
-					images: [{ file: IMG2, horizontal: true }],
+					images: [
+						{
+							file: IMG2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar 18 must have to change',
-					images: [{ file: h2, horizontal: true }],
+					images: [
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar 199 must have to change',
 					images: [
-						{ file: IMG1, horizontal: false },
-						{ file: vertical, horizontal: false },
-						{ file: h2, horizontal: true },
+						{
+							file: IMG1,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: vertical,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{ file: h2, horizontal: true, link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg' },
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar 20 must have to change',
 					images: [
-						{ file: vertical, horizontal: false },
-						{ file: IMG4, horizontal: true },
-						{ file: h2, horizontal: true },
-						{ file: IMG3, horizontal: true },
-						{ file: h2, horizontal: true },
+						{
+							file: vertical,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG4,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: IMG3,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 			],
@@ -185,16 +506,27 @@ let data = [
 	{
 		sections: {
 			title: 'Lorpas Ipsum1 1.2',
-			desc:
-				' 1.2Lorpas Ipsum Currently, I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan. I am also leading the Natural Language Processing (NLP) research group at XYZ, XYZ. I hold a PhD in Computer Science from University of Sheffield, UK. During PhD, my research work focused on text reuse and plagiarism detection using Information Retrieval (IR) and Natural Language Processing (NLP) techniques.',
+			desc: ' 1.2Lorpas Ipsum Currently, I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
 
 			data: [
 				//first 1.2 images
 				{
 					title: 'Lorpas Ipsum1 Dollar',
 					images: [
-						{ file: vertical, horizontal: false },
-						{ file: vertical, horizontal: false },
+						{
+							file: vertical,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: vertical,
+							horizontal: false,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 			],
@@ -203,33 +535,86 @@ let data = [
 	{
 		sections: {
 			title: 'Lorpas Ipsum1 1.3',
-			desc:
-				' 1.3 Lorpas Ipsum Currently, I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan. I am also leading the Natural Language Processing (NLP) research group at XYZ, XYZ. I hold a PhD in Computer Science from University of Sheffield, UK. During PhD, my research work focused on text reuse and plagiarism detection using Information Retrieval (IR) and Natural Language Processing (NLP) techniques.',
+			desc: ' 1.3 Lorpas Ipsum Currently, I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
 
 			data: [
 				//first 1.3 images
 				{
 					title: 'Lorpas Ipsum1 Dollar 1.3.1',
 					images: [
-						{ file: horizontal, horizontal: true },
-						{ file: horizontal, horizontal: true },
+						{
+							file: horizontal,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: horizontal,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar3',
 					images: [
-						{ file: horizontal, horizontal: true },
-						{ file: h2, horizontal: true },
+						{
+							file: horizontal,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 				{
 					title: 'Lorpas Ipsum1 Dollar3',
 					images: [
-						{ file: horizontal, horizontal: true },
-						{ file: h2, horizontal: true },
-						{ file: horizontal, horizontal: true },
-						{ file: h2, horizontal: true },
-						{ file: horizontal, horizontal: true },
+						{
+							file: horizontal,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: horizontal,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: h2,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
+						{
+							file: horizontal,
+							horizontal: true,
+							textLink: 'I amd link place mein here for underline text',
+							link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+							description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+						},
 					],
 				},
 			],
@@ -249,8 +634,12 @@ export default function FirstLevel() {
 	const [modalShowHor, setModalShowHor] = React.useState(false);
 	const [modalShowVer, setModalShowVer] = React.useState(false);
 	const [currentImage, setCurrentImage] = React.useState('');
-	const showModalHandler = (image, horizontal) => {
+	const [currentDesc, setCurrentDesc] = React.useState('');
+	const [textLink, setTextLink] = React.useState(null);
+	const showModalHandler = (image, horizontal, description, txtLink) => {
+		setCurrentDesc(description);
 		setCurrentImage(image);
+		setTextLink(txtLink);
 		if (horizontal) {
 			setModalShowHor(true);
 			setModalShowVer(false);
@@ -260,11 +649,6 @@ export default function FirstLevel() {
 		}
 	};
 	React.useEffect(() => {
-		// $(document).ready(() => {
-		// 	document.body.addEventListener('mouseover', (e) => {
-		// 		console.log(e.target);
-		// 	});
-		// });
 		document.body.addEventListener('click', () => {
 			setModalShowHor(false);
 			setModalShowVer(false);
@@ -272,8 +656,8 @@ export default function FirstLevel() {
 	}, []);
 	return (
 		<div className='container '>
-			<HorizontalModal show={modalShowHor} image={currentImage} onHide={() => setModalShowHor(false)} />
-			<VerticalModel show={modalShowVer} image={currentImage} onHide={() => setModalShowVer(false)} />
+			<HorizontalModal textLink={textLink} description={currentDesc} show={modalShowHor} image={currentImage} onHide={() => setModalShowHor(false)} />
+			<VerticalModel textLink={textLink} description={currentDesc} show={modalShowVer} image={currentImage} onHide={() => setModalShowVer(false)} />
 
 			<div className='row'>
 				<div className={classes.root}>
@@ -298,22 +682,22 @@ export default function FirstLevel() {
 										<div className='d-flex' style={{ flexWrap: 'wrap' }}>
 											{img.images.map((image, j) => (
 												<div key={j}>
-													{/* <a href='/' target='_blank'> */}
-													<img
-														className='h-image-size'
-														src={image.file}
-														id={'idimage' + i + '-' + j}
-														onClick={() => newTabImage(+i + '-' + j)}
-														alt='horizontalimage'
-														onMouseOver={() => {
-															if (image.horizontal) {
-																showModalHandler(image.file, true);
-															} else {
-																showModalHandler(image.file, false);
-															}
-														}}
-													/>
-													{/* </a> */}
+													<a href={image.link} rel='noreferrer' target='_blank'>
+														<img
+															className='h-image-size'
+															src={image.file}
+															id={'idimage' + i + '-' + j}
+															// onClick={() => newTabImage(+i + '-' + j)}
+															alt='horizontalimage'
+															onMouseOver={() => {
+																if (image.horizontal) {
+																	showModalHandler(image.file, true, image.description, image.textLink);
+																} else {
+																	showModalHandler(image.file, false, image.description, image.textLink);
+																}
+															}}
+														/>
+													</a>
 												</div>
 											))}
 										</div>

@@ -40,8 +40,10 @@ export default function SecondLevel() {
 	const [modalShowHor, setModalShowHor] = React.useState(false);
 	const [modalShowVer, setModalShowVer] = React.useState(false);
 	const [currentImage, setCurrentImage] = React.useState('');
-	const showModalHandler = (image, horizontal) => {
+	const [link, setLink] = React.useState(null);
+	const showModalHandler = (image, horizontal, link) => {
 		setCurrentImage(image);
+		setLink(link);
 		if (horizontal) {
 			setModalShowHor(true);
 			setModalShowVer(false);
@@ -58,8 +60,8 @@ export default function SecondLevel() {
 	}, []);
 	return (
 		<div className='container '>
-			<VerticalModel2 show={modalShowVer} image={currentImage} onHide={() => setModalShowVer(false)} />
-			<HorizontalModal2 show={modalShowHor} image={currentImage} onHide={() => setModalShowHor(false)} />
+			<VerticalModel2 link={link} show={modalShowVer} image={currentImage} onHide={() => setModalShowVer(false)} />
+			<HorizontalModal2 link={link} show={modalShowHor} image={currentImage} onHide={() => setModalShowHor(false)} />
 			<div className='mb-2 mt-2 fontfamily'>
 				<strong>Lorpas Ipsum 2.1</strong> Currently, I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan. I am also leading the Natural Language Processing (NLP) research group at XYZ, XYZ. I hold a PhD in Computer Science
 				from University of Sheffield, UK. During PhD, my research work focused on text reuse and plagiarism detection using Information Retrieval (IR) and Natural Language Processing (NLP) techniques.
@@ -79,37 +81,59 @@ export default function SecondLevel() {
 							<div className=' col-12 '>
 								<div className='d-flex '>
 									{[
-										{ file: IMG1, horizontal: false },
-										{ file: IMG2, horizontal: false },
-										{ file: IMG3, horizontal: false },
-										{ file: IMG6, horizontal: false },
-										{ file: horizontal, horizontal: true },
+										{
+											file: IMG1,
+											horizontal: false,
+											textLink: 'I am link place me in here for underline',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: IMG2,
+											horizontal: false,
+											textLink: 'I amd link place mein here for underline text',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: IMG3,
+											horizontal: false,
+											textLink: 'I am link place me in here for underline',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: IMG6,
+											horizontal: false,
+											textLink: 'I amd link place mein here for underline text',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: horizontal,
+											horizontal: true,
+											textLink: 'I am link place me in here for underline',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
 									].map((image, id) => (
-										<img
-											className='h-image-size'
-											src={image.file}
-											alt='horizontalimage'
-											id={'idimage' + id + '-id'}
-											onClick={() => newTabImage(id, '-id')}
-											onMouseOver={() => {
-												if (image.horizontal) {
-													showModalHandler(image.file, true);
-												} else {
-													showModalHandler(image.file, false);
-												}
-											}}
-										/>
-										// <img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
+										<a href={image.link} rel='noreferrer' target='_blank'>
+											<img
+												className='h-image-size'
+												src={image.file}
+												alt='horizontalimage'
+												id={'idimage' + id + '-id'}
+												// onClick={() => newTabImage(id, '-id')}
+												onMouseOver={() => {
+													if (image.horizontal) {
+														showModalHandler(image.file, true, image.description, image.textLink);
+													} else {
+														showModalHandler(image.file, false, image.description, image.textLink);
+													}
+												}}
+											/>
+										</a>
 									))}
-									{/* <VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img className='h-image-size' src={horizontal} alt='horizontalimage' onMouseOver={() => setModalShowHor(true)} />
-									<HorizontalModal2 show={modalShowHor} imageToShow={horizontal} onHide={() => setModalShowHor(false)} /> */}
 								</div>
 							</div>
 						</div>
@@ -117,37 +141,59 @@ export default function SecondLevel() {
 							<div className=' col-12 '>
 								<div className='d-flex '>
 									{[
-										{ file: IMG8, horizontal: false },
-										{ file: IMG7, horizontal: false },
-										{ file: IMG5, horizontal: false },
-										{ file: IMG7, horizontal: false },
-										{ file: vertical, horizontal: false },
+										{
+											file: IMG8,
+											horizontal: false,
+											textLink: 'I am link place me in here for underline',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: IMG7,
+											horizontal: false,
+											textLink: 'I amd link place mein here for underline text',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: IMG5,
+											horizontal: false,
+											textLink: 'I am link place me in here for underline',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: IMG7,
+											horizontal: false,
+											textLink: 'I amd link place mein here for underline text',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: vertical,
+											horizontal: false,
+											textLink: 'I am link place me in here for underline',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
 									].map((image, id) => (
-										<img
-											className='h-image-size'
-											src={image.file}
-											id={'idimage' + id + '-idd'}
-											onClick={() => newTabImage(id, '-idd')}
-											alt='horizontalimage'
-											onMouseOver={() => {
-												if (image.horizontal) {
-													showModalHandler(image.file, true);
-												} else {
-													showModalHandler(image.file, false);
-												}
-											}}
-										/>
+										<a href={image.link} rel='noreferrer' target='_blank'>
+											<img
+												className='h-image-size'
+												src={image.file}
+												id={'idimage' + id + '-idd'}
+												// onClick={() => newTabImage(id, '-idd')}
+												alt='horizontalimage'
+												onMouseOver={() => {
+													if (image.horizontal) {
+														showModalHandler(image.file, true, image.description, image.textLink);
+													} else {
+														showModalHandler(image.file, false, image.description, image.textLink);
+													}
+												}}
+											/>
+										</a>
 									))}
-									{/* <img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} /> */}
 								</div>
 							</div>
 						</div>
@@ -168,37 +214,59 @@ export default function SecondLevel() {
 							<div className=' col-12 '>
 								<div className='d-flex '>
 									{[
-										{ file: horizontal, horizontal: true },
-										{ file: IMG1, horizontal: false },
-										{ file: vertical, horizontal: false },
-										{ file: horizontal, horizontal: true },
-										{ file: IMG7, horizontal: true },
+										{
+											file: horizontal,
+											horizontal: true,
+											textLink: 'I am link place me in here for underline',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: IMG1,
+											horizontal: false,
+											textLink: 'I amd link place mein here for underline text',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: vertical,
+											horizontal: false,
+											textLink: 'I am link place me in here for underline',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: horizontal,
+											horizontal: true,
+											textLink: 'I amd link place mein here for underline text',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: IMG7,
+											horizontal: true,
+											textLink: 'I am link place me in here for underline',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
 									].map((image, id) => (
-										<img
-											className='h-image-size'
-											src={image.file}
-											id={'idimage' + id + '-iddd'}
-											onClick={() => newTabImage(id, '-iddd')}
-											alt='horizontalimage'
-											onMouseOver={() => {
-												if (image.horizontal) {
-													showModalHandler(image.file, true);
-												} else {
-													showModalHandler(image.file, false);
-												}
-											}}
-										/>
+										<a href={image.link} rel='noreferrer' target='_blank'>
+											<img
+												className='h-image-size'
+												src={image.file}
+												id={'idimage' + id + '-iddd'}
+												// onClick={() => newTabImage(id, '-iddd')}
+												alt='horizontalimage'
+												onMouseOver={() => {
+													if (image.horizontal) {
+														showModalHandler(image.file, true, image.description, image.textLink);
+													} else {
+														showModalHandler(image.file, false, image.description, image.textLink);
+													}
+												}}
+											/>
+										</a>
 									))}
-									{/* <img className='h-image-size' src={horizontal} alt='horizontalimage' onMouseOver={() => setModalShowHor(true)} />
-									<HorizontalModal2 show={modalShowHor} imageToShow={horizontal} onHide={() => setModalShowHor(false)} />
-									<img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img className='h-image-size' src={horizontal} alt='horizontalimage' onMouseOver={() => setModalShowHor(true)} />
-									<HorizontalModal2 show={modalShowHor} imageToShow={horizontal} onHide={() => setModalShowHor(false)} />
-									<img className='h-image-size' src={horizontal} alt='horizontalimage' onMouseOver={() => setModalShowHor(true)} />
-									<HorizontalModal2 show={modalShowHor} imageToShow={horizontal} onHide={() => setModalShowHor(false)} /> */}
 								</div>
 							</div>
 						</div>
@@ -206,28 +274,38 @@ export default function SecondLevel() {
 							<div className=' col-12 '>
 								<div className='d-flex '>
 									{[
-										{ file: vertical, horizontal: false },
-										{ file: horizontal, horizontal: true },
+										{
+											file: vertical,
+											horizontal: false,
+											textLink: 'I am link place me in here for underline',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: horizontal,
+											horizontal: true,
+											textLink: 'I amd link place mein here for underline text',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
 									].map((image, id) => (
-										<img
-											className='h-image-size'
-											src={image.file}
-											alt='horizontalimage'
-											id={'idimage' + id + '-idddd'}
-											onClick={() => newTabImage(id, '-idddd')}
-											onMouseOver={() => {
-												if (image.horizontal) {
-													showModalHandler(image.file, true);
-												} else {
-													showModalHandler(image.file, false);
-												}
-											}}
-										/>
+										<a href={image.link} rel='noreferrer' target='_blank'>
+											<img
+												className='h-image-size'
+												src={image.file}
+												alt='horizontalimage'
+												id={'idimage' + id + '-idddd'}
+												// onClick={() => newTabImage(id, '-idddd')}
+												onMouseOver={() => {
+													if (image.horizontal) {
+														showModalHandler(image.file, true, image.description, image.textLink);
+													} else {
+														showModalHandler(image.file, false, image.description, image.textLink);
+													}
+												}}
+											/>
+										</a>
 									))}
-									{/* <img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img className='h-image-size' src={horizontal} alt='horizontalimage' onMouseOver={() => setModalShowHor(true)} />
-									<HorizontalModal2 show={modalShowHor} imageToShow={horizontal} onHide={() => setModalShowHor(false)} /> */}
 								</div>
 							</div>
 						</div>
@@ -235,28 +313,36 @@ export default function SecondLevel() {
 							<div className=' col-12 '>
 								<div className='d-flex '>
 									{[
-										{ file: vertical, horizontal: false },
-										{ file: vertical, horizontal: false },
+										{
+											file: vertical,
+											horizontal: false,
+											textLink: 'I am link place me in here for underline',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
+										{
+											file: vertical,
+											horizontal: false,
+											textLink: 'I amd link place mein here for underline text',
+											link: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg',
+											description: 'I am working as Assistant Professor in the Computer Science Department of XYZ of Information Technology, Lahore, Pakistan.',
+										},
 									].map((image, id) => (
 										<img
 											className='h-image-size'
 											src={image.file}
 											alt='horizontalimage'
 											id={'idimage' + id + '-iddddd'}
-											onClick={() => newTabImage(id, '-iddddd')}
+											// onClick={() => newTabImage(id, '-iddddd')}
 											onMouseOver={() => {
 												if (image.horizontal) {
-													showModalHandler(image.file, true);
+													showModalHandler(image.file, true, image.description, image.textLink);
 												} else {
-													showModalHandler(image.file, false);
+													showModalHandler(image.file, false, image.description, image.textLink);
 												}
 											}}
 										/>
 									))}
-									{/* <img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} />
-									<img className='v-image-size' src={vertical} alt='vertical' onMouseOver={() => setModalShowVer(true)} />
-									<VerticalModel2 show={modalShowVer} imageToShow={vertical} onHide={() => setModalShowVer(false)} /> */}
 								</div>
 							</div>
 						</div>
